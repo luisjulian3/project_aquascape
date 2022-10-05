@@ -6,6 +6,7 @@ import 'package:project_aquascape/pages/splash_page.dart';
 import 'package:project_aquascape/pages/signup_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:project_aquascape/utils/errorMessage.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
