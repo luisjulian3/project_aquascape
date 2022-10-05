@@ -6,6 +6,7 @@ import 'package:lottie/lottie.dart';
 import 'package:project_aquascape/controller/controller.dart';
 import 'package:project_aquascape/pages/home_page.dart';
 import 'package:project_aquascape/pages/signup_page.dart';
+import 'package:project_aquascape/widgets/navigation_bar.dart';
 import 'package:project_aquascape/widgets/reuse_widgets.dart';
 
 import '../utils/constants.dart';
@@ -240,8 +241,6 @@ class _LoginPageState extends State<LoginPage> {
                 /// Login Button
                 firebaseUIButton(context, 'Sign In', () {
                   if (_formKey.currentState!.validate()) {
-                    // If the form is valid, display a snackbar. In the real world,
-                    // you'd often call a server or save the information in a database.
                     ScaffoldMessenger.of(context).showSnackBar(
                       const SnackBar(content: Text('Processing Data')),
                     );
@@ -250,8 +249,10 @@ class _LoginPageState extends State<LoginPage> {
                             email: _emailController.text,
                             password: _passwordController.text)
                         .then((value) {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => HomePage()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => NavigationPage()));
                     }).onError((error, stackTrace) {
                       print("Error ${error.toString()}");
                     });
