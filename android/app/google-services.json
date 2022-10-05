@@ -1,0 +1,97 @@
+{
+  "project_info": {
+    "project_number": "211752427098",
+    "project_id": "project-aquascape",
+    "storage_bucket": "project-aquascape.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211752427098:android:6db27b007fd9838ed7c263",
+        "android_client_info": {
+          "package_name": "com.android.application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "211752427098-ijft0uuhoioc26esup14o1eh7nrsipde.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALriVpPkCIjvVHUXkehhYb_siUmKExA28"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "211752427098-ijft0uuhoioc26esup14o1eh7nrsipde.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211752427098:android:c7896de1f86065afd7c263",
+        "android_client_info": {
+          "package_name": "com.android.project_aquascape"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "211752427098-ijft0uuhoioc26esup14o1eh7nrsipde.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALriVpPkCIjvVHUXkehhYb_siUmKExA28"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "211752427098-ijft0uuhoioc26esup14o1eh7nrsipde.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211752427098:android:b19ab13cb33cab34d7c263",
+        "android_client_info": {
+          "package_name": "com.example.project_aquascape"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "211752427098-ijft0uuhoioc26esup14o1eh7nrsipde.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALriVpPkCIjvVHUXkehhYb_siUmKExA28"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "211752427098-ijft0uuhoioc26esup14o1eh7nrsipde.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
