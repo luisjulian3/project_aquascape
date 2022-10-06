@@ -221,7 +221,7 @@ class _LoginPageState extends State<LoginPage> {
                     // The validator receives the text that the user has entered.
                     validator: (value) {
                       if (value == null || value.isEmpty) {
-                        return 'Please enter some text';
+                         return 'Please enter some text';
                       } else if (value.length < 7) {
                         return 'at least enter 6 characters';
                       } else if (value.length > 13) {

@@ -43,9 +43,6 @@ Container firebaseUIButton(BuildContext context, String title, Function onTap) {
   );
 }
 
-
-
-Container BottomNavigationBar () {
-  return Container(
-  );
+Container BottomNavigationBar() {
+  return Container();
 }
