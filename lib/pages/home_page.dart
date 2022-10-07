@@ -5,6 +5,8 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:get/get.dart';
 import 'package:project_aquascape/pages/login_page.dart';
 
+import '../widgets/reuse_widgets.dart';
+
 class HomePage extends StatefulWidget {
   HomePage({super.key});
   FirebaseAuth auth = FirebaseAuth.instance;
@@ -17,8 +19,8 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Home'),
+      appBar: CustomAppBar(
+        title: ('Home'),
       ),
       body: Padding(
         padding: EdgeInsets.all(20),
@@ -35,29 +37,15 @@ class _HomePageState extends State<HomePage> {
             SizedBox(
               height: 8,
             ),
-            ElevatedButton.icon(
-              style: ElevatedButton.styleFrom(
-                minimumSize: Size.fromHeight(50),
-              ),
-              icon: Icon(
-                Icons.arrow_back,
-                size: 32,
-              ),
-              label: Text(
-                'sign out',
-                style: TextStyle(fontSize: 24),
-              ),
-              onPressed: (() => SignOut()),
-            )
           ],
         ),
       ),
     );
   }
 
-  Future<void> SignOut() async {
+  /*Future<void> SignOut() async {
     await FirebaseAuth.instance.signOut();
     Navigator.of(context)
         .pushNamedAndRemoveUntil('/loginpage', (Route<dynamic> route) => false);
-  }
+  }*/
 }

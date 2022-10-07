@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project_aquascape/widgets/reuse_widgets.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
@@ -11,8 +12,8 @@ class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Home'),
+      appBar: CustomAppBar(
+        title: ('Profile'),
       ),
       body: Padding(
         padding: EdgeInsets.all(20),
@@ -34,7 +35,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 minimumSize: Size.fromHeight(50),
               ),
               icon: Icon(
-                Icons.arrow_back,
+                Icons.production_quantity_limits,
                 size: 32,
               ),
               label: Text(

@@ -4,8 +4,10 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:project_aquascape/controller/navigation_bar_controller.dart';
+import 'package:project_aquascape/pages/dashboard_page.dart';
 import 'package:project_aquascape/pages/home_page.dart';
 import 'package:project_aquascape/pages/profile_page.dart';
+import 'package:project_aquascape/pages/signup_page.dart';
 
 class NavigationPage extends StatelessWidget {
   BottomNavigationController bottomNavigationController =
@@ -14,8 +16,8 @@ class NavigationPage extends StatelessWidget {
 
   final screens = [
     HomePage(),
+    DashboardPage(),
     ProfilePage(),
-    //Data(),
   ];
 
   @override
@@ -43,7 +45,11 @@ class NavigationPage extends StatelessWidget {
               BottomNavigationBarItem(
                   icon: Icon(Icons.settings),
                   label: "Settings",
-                  backgroundColor: Colors.blue)
+                  backgroundColor: Colors.blue),
+              BottomNavigationBarItem(
+                  icon: Icon(Icons.person_pin_outlined),
+                  label: "Profile",
+                  backgroundColor: Colors.blue),
             ],
           )),
     );

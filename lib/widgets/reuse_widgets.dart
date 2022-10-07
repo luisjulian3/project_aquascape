@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:project_aquascape/pages/login_page.dart';
 
 class reuse_widgets extends StatefulWidget {
   const reuse_widgets({super.key});
@@ -43,6 +45,27 @@ Container firebaseUIButton(BuildContext context, String title, Function onTap) {
   );
 }
 
-Container BottomNavigationBar() {
-  return Container();
+class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
+  final String title;
+  const CustomAppBar({
+    Key? key,
+    required this.title,
+  }) : super(key: key);
+
+  @override
+  Size get preferredSize => Size.fromHeight(60.0);
+
+  @override
+  Widget build(BuildContext context) {
+    return AppBar(
+      backgroundColor: Colors.yellow,
+      centerTitle: true,
+      title: Text(title),
+      elevation: 0,
+      leading: IconButton(
+        onPressed: () => Get.back(),
+        icon: Icon(Icons.arrow_back, color: Colors.black),
+      ),
+    );
+  }
 }
