@@ -41,10 +41,10 @@ class NavigationPage extends StatelessWidget {
               BottomNavigationBarItem(
                   icon: Icon(Icons.home),
                   label: "Home",
-                  backgroundColor: Colors.red),
+                  backgroundColor: Colors.blue),
               BottomNavigationBarItem(
                   icon: Icon(Icons.settings),
-                  label: "Settings",
+                  label: "Dashboard",
                   backgroundColor: Colors.blue),
               BottomNavigationBarItem(
                   icon: Icon(Icons.person_pin_outlined),

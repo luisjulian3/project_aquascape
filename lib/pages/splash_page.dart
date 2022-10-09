@@ -17,7 +17,7 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   _navigatetohome() async {
-    await Future.delayed(Duration(milliseconds: 900), () {});
+    await Future.delayed(Duration(seconds: 4), () {});
     Get.to(() => SignUp());
   }
 
@@ -26,7 +26,28 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.red,
+      body: Stack(
+        children: [
+          Container(
+            decoration: BoxDecoration(
+              color: (Color.fromARGB(255, 7, 185, 245)),
+              gradient: LinearGradient(colors: [
+                (Color.fromARGB(255, 7, 185, 245)),
+                (Color.fromARGB(255, 7, 185, 245))
+              ], begin: Alignment.topCenter, end: Alignment.bottomCenter),
+            ),
+          ),
+          Center(
+            child: Container(
+              child: Image.asset(
+                'lib/images/logo.png',
+                height: 90,
+                width: 90,
+              ),
+            ),
+          )
+        ],
+      ),
     );
   }
 }
